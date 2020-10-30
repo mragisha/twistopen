@@ -1,0 +1,511 @@
+
+/* header start */
+.header{
+    background-color: black;
+    height: 98vh;
+}
+
+/* navbar start */
+.nav{
+    padding: 40px 20px 0 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links{
+    display: flex;
+    width:60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+    font-size: 1.2vw;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.openburger{
+    position: absolute;
+    top: 8vh;
+    right: 8vw;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+    .nav-links{
+        background-color: black;
+    width: 100%;
+    height: 84vh;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16vh;
+    opacity: 0;
+    }
+    .nav-links li a{
+        font-size: 6vw;
+    font-weight: 700;
+    }
+    .openburger{
+        display: block;
+    }
+    
+    
+    
+}
+/* navbar end  */
+.how{
+    padding-top: 30vh;
+    width: 100%;
+}
+.help {
+    font-family: "Domaine display web", sans-serif;
+    font-size: 27vh;
+    line-height: 144px;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-weight: bold;
+    
+}
+@media screen and (max-width:1024px){
+    .header{
+        height: 100%;
+    }
+    .help{
+        font-size: 20vh;
+    }
+    .how{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .header{
+        height: 70vh;
+    }
+    .how{
+        padding-top: 20vh;
+        width: 80%;
+    }
+    .help {
+        font-size: 11vh;
+        color: white;
+        background-color: black;
+        
+    }
+    
+}
+@media screen and (max-width:445px){
+    .help{
+        font-size: 8vh ;
+    }
+    .header{
+        height: 50vh;
+    }
+}
+/* header end */
+
+/* carousel start */
+
+.carousel{
+    background-color: black;
+}
+
+.blocks{
+    height: 57vh;
+    width: 40vw;
+    font-size: 3.47vw;
+    color: white;
+    font-weight: bold;
+    padding-top: 8vh;
+    padding-left: 4vw;
+    padding-right: 6vw;
+    margin-left: 30vw;
+   
+
+}
+@media screen and (max-width:768px){
+    .blocks{
+        height: 40vh;
+        margin-left: 10vw;
+        
+       
+    }
+   
+    
+    
+}
+@media screen and (max-width:578px){
+    .blocks{
+        height: 30vh;
+    }
+}
+
+.prev{
+    position: absolute;
+    left: 30vw;
+    border: none;
+    display: inline-block;
+    z-index: 1;
+}
+.next{
+    position: absolute;
+    right: 16vw;
+    border: none;
+    z-index: 1;
+}
+@media screen and (max-width:768px){
+    .next{
+        right: 24vw;
+    }
+    .prev{
+        left: 10vw;
+    }
+}
+
+.first{
+    background-color: #0081ff;
+}
+.second{
+    background-color: #ff811d;
+}
+.third{
+    background-color: #ffc72a;
+}
+.fourth{
+    background-color: #1fb58d;
+}
+.fifth{
+    background-color: #ee236b;
+}
+
+/* carousel end */
+
+/* main content start */
+.main_content{
+    background-color: black;
+    padding-top: 18vh;
+}
+.mob_main{
+    display: none;
+}
+.business{
+    width: 94%;
+    background-color: black;
+}
+.business_offerings,.capabilty_heading{
+    color: white;
+    font-size: 52px;
+    margin: 0 0 64px;
+    font-weight: bold;
+}
+@media screen  and (max-width:768px){
+    .business_offerings{
+        font-size: 37px;
+    }
+    .mob_main{
+        display: block;
+    }
+    .desk_main{
+        display: none;
+    }
+    
+}
+.cardcol{
+     padding-left: 8px;
+    padding-right: 8px;
+  
+    
+    
+}
+.whitecard{
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  
+    
+    
+}
+.blackcard{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    background-color: black;
+    border: 2px dashed white;
+    color: white;
+    overflow: visible;
+
+    
+
+}
+@media screen and (max-width:950px){
+    .whitecard,.blackcard{
+        height: 70vh ;
+    }
+}
+
+.whitecard h3{
+    font-size: 2.8;
+    font-weight: bold;
+    margin-left: 2vw;
+    padding-top: 1vh;
+   
+    
+}
+.whitecard p{
+    font-size: 1.09vw; 
+    margin-left: 2vw;
+    margin-top: 5vh;
+    margin-right: 2vw;
+    padding-bottom: 2vh;
+}
+
+.blackcard h3{
+    font-size: 2vw;
+    margin-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.blackcard button{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+   
+    width: 60%;
+    font-size: 2vw;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    
+}
+@media screen and (max-width:768px){
+    .whitecard p{
+        display: none;
+    }
+    .cardcol{
+        margin-top: 5vh;
+    }
+    .whitecard h3{
+        text-align: center;
+        font-size: 1.5em;
+        padding-bottom: 1vh;
+    }
+    .research{
+        padding-top: 8vh;
+    }
+    .whitecard{
+       height: 52vh;
+    }
+    .blackcard img{
+        height: 40%;
+    }
+    .infranet h3{
+        margin-top: 4vh;
+    }
+    .blackcard button{
+        margin-top: 0;
+       
+    }
+    .blackcard h3{
+        margin-top: 0;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:578px){
+    .whitecard,.blackcard{
+        height: 45vw;
+    }
+    .whitecard h3{
+        font-size: 1em;
+        padding-top: 0;
+    }
+}
+
+.row2,.row3,.row4{
+    margin-top: 4vh;
+}
+
+
+/* main content end */
+
+/* capabilities start */
+.capabilities{
+    padding-top: 30vh;
+    background-color: black;
+    padding-bottom: 10vh;
+}
+.inner_capability{
+    width: 94%;
+
+}
+.capability-row{
+    display: flex;
+    width: 90%;
+    margin-bottom: 2.43vw;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+}
+.cap-word {
+    font-size: 2.5vw;
+    line-height: 119%;
+    font-weight: 300;
+    color: white;
+}
+.mobile-capabilities{
+    display: none;
+    padding-left: 20px;
+}
+
+@media screen and (max-width:479px){
+    .capability-row{
+        display: none;
+    }
+    .mobile-capabilities{
+        display: block;
+    }
+    .mob-capibility-row{
+        display: flex;
+        align-items: center;
+    }
+    .mob-capibility-row h4{
+        font-size: 5.5vw;
+    line-height: 180%;
+    font-weight: 300;
+    color: white;
+    padding-left: 2vw;
+    }
+    
+}
+/* capabilites end  */
+
+/* clients start */
+.inner_clients{
+    width: 94%;
+    padding-top: 10vh;
+}
+.client_heading{
+    font-size: 52px;
+    margin: 0 0 64px;
+    font-weight: bold;
+    color: black;
+}
+
+.inner_clients .row1 h4, .inner_clients .row2 h4 ,.inner_clients .row3 h4{
+    padding-left: 5vw;
+}
+
+.fintech,.social,.entertainment{
+    padding-right: 3vw;
+}
+.consumer,.education,.telecom{
+    padding-left: 3vw;
+}
+.row11,.row21,.row31{
+    margin-top: 8vh;
+}
+.row12,.row22{
+    margin-top: 3vh;
+}
+@media screen and (max-width:768px){
+    .consumer,.education,.social,.entertainment,.telecom{
+        margin-top: 8vh;
+    }
+    .fintech h4,.consumer h4,.social h4 ,.education h4,.entertainment h4 ,.telecom h4{
+        font-size: 18px;
+
+    }
+    
+}
+
+.row2,.row3{
+    margin-top: 16vh;
+}
+
+/* clients end */
+
+/* footer start */
+
+.footer{
+    background-color: black;
+    margin-top: 15vh;
+}
+.inner_footer{
+    width: 94%;
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+}
+.iconrow{
+    margin-top: 3vh;
+}
+.icon{
+    padding-right: 4vw;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.links :hover{
+    color: #ee236b;
+}
+.links{
+    color: white;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
+.smalllinks_show{
+    display: none;
+
+}
+
+@media screen and (max-width:920px){
+    .links{
+        font-size: 28px;
+    }
+    .leftcol{
+        margin-top: 5vh;
+    }
+    .smalllinks_show{
+        display: block;
+        margin-left: 2vw;
+    }
+    .smalllinks_hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width:568px){
+    .links{
+        text-align: left;
+        margin-top: 3vh;
+    }
+    .smalllinks_show{
+        margin-left: 0;
+    }
+    .rightcol{
+        margin-top: 5vh;
+    }
+}
+
+/* footer end  */
